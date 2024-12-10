@@ -15,7 +15,7 @@ def div(a, b):
 
 
 def add(a, b):
-    return a**2 + b**2
+    return a + b
 
 if __name__ == "__main__":
     print(add(100, 3))
