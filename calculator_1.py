@@ -13,9 +13,11 @@ def mul(a, b):
 def div(a, b):
     return a / b
 
+def sqrt(a):
+    return a**0.5
 
-def add(a, b):
-    return a + b
+def pow(a, b):
+    return a**b
 
 if __name__ == "__main__":
     print(add(100, 3))

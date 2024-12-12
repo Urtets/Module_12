@@ -49,6 +49,7 @@ class Tournament:
 
 
 class TournamentTest(unittest.TestCase):
+    is_frozen = True
     @classmethod
     def setUpClass(cls):
         cls.all_results = {}
@@ -69,6 +70,7 @@ class TournamentTest(unittest.TestCase):
         self.assertTrue('Nick' == self.all_results[len(self.all_results)].name)
         print(self.all_results[1].name)
 
+    @unittest.skipIf(is_frozen == True, "Не тестируем")
     def test_andrew_nick(self):
         tour_1 = Tournament(90, self.runner_andrew, self.runner_nick)
         self.all_results = tour_1.start()
