@@ -34,3 +34,7 @@ if __name__ == "__main__":
 
     print(div(3, 5))
     print(div(3, 0))
+
+    assert pow(10, 2) == 10, "Не сработало"
+    import doctest
+    doctest.testmod()
